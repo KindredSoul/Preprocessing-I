@@ -134,11 +134,14 @@ a {
 	justify-content: space-between;
 }
 
+#media-nav {
+	display: none;
+}
 
 // Header ==================================
 
 #follow {
-	.basic-border();
+	// .basic-border();
 	position: sticky;
 	top: 0;
 	float: right;
@@ -147,22 +150,21 @@ a {
 	display: flex;
 	justify-content: space-evenly;
 	background-color: beige;
-	
 }
 
-	.header {
-		.basic-border();
-	}
+.header {
+	.basic-border();
+}
 
 
-	.name-intro {
+.name-intro {
 		width: 60%;
 		text-align: center;
 		.flex-basic;
 		flex-direction: column;
 
 	}
-		.name {
+	.name {
 			// .basic-border();
 			font-size: 7.4rem;
 			font-weight: 600;
@@ -175,14 +177,14 @@ a {
 			font-size: 2.6rem;
 			width: 100%;
 		}
-
-
-	.contact-info {
-		display: flex;
-		flex-flow: column wrap;
-		justify-content: space-between;
-		width: 40%;
-		padding-right: 2%;
+		
+		
+		.contact-info {
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: space-between;
+			width: 40%;
+			padding-right: 2%;
 	}
 		.email {
 			a {
@@ -199,11 +201,11 @@ a {
 				color: rgb(250, 37, 0);
 			}
 		}
-
+	
 // Sidebar ===================================
 
 #sidebar {
-	.basic-border();
+	// .basic-border();
 	position: fixed;
 	width: 20%;
 	height: 100%;
@@ -219,12 +221,12 @@ a {
 			height: auto;
 		}
 	nav {
-		.basic-border;
+		// .basic-border;
 		display: flex;
 		text-align: right;
 		height: 15rem;
 		ul {
-			.basic-border;
+			// .basic-border;
 			.flex-basic;
 			width: 100%;
 			flex-direction: column;
@@ -235,7 +237,7 @@ a {
 // Wrapper ============================
 
 #wrapper {
-	.basic-border();
+	// .basic-border();
 	width: 80%;
 	height: auto;
 	margin-left: 20%;
@@ -332,3 +334,108 @@ a {
 
 
 
+// Media Queries 500px ============================
+
+@media(max-width: 768px) {
+	#follow {
+		display: none;
+	}
+	#media-nav {
+		.basic-border();
+		.flex-basic;
+		position: static;
+		width: 100%;
+		background-color: rgb(200, 200, 214);
+	}
+	
+	.name-intro {
+			width: 100%;
+	
+		}
+		.name {
+			// .basic-border();
+			font-size: 2.4rem;
+			}
+			address {
+				// .basic-border;
+				.flex-basic;
+				width: 100%;
+				font-size: 1.6rem;
+				text-align: center;
+			}
+				
+			
+			.contact-info {
+				.flex-basic;
+				justify-content: space-evenly;
+				width: 100%;
+				padding: 0;
+		}
+			.email {
+				a {
+					color: rgb(20, 128, 128);
+				}
+			}
+			.media-links {
+				a {
+					color: rgb(8, 8, 8);
+				}
+				width: 100%;
+				justify-content: space-evenly;
+				padding: 0 3%;
+
+			}
+// Sidebar =========================
+			
+			#sidebar {
+				display: none;
+			}
+			
+// Wrapper ============================
+		
+		#wrapper {
+			// .basic-border();
+			width: 100%;
+			margin: 0;
+		}
+		
+		
+// Overview ===========================
+		#home {
+			// .basic-border;
+			width: 100%;
+			display: flex;
+			flex-flow: row wrap;
+			align-content: center;
+		}
+		
+			.about {
+				// .basic-border;
+				width: 100%;
+				h3 {
+					.basic-header;
+					border-bottom: 2px solid black;
+				}
+				p {
+					line-height: normal;
+				}
+			}
+			.edu {
+				width: 100%;
+				// margin: 1% 0;
+				// .basic-border;
+				.table-set;
+				}
+			.exp {
+				width: 100%;
+				// margin: 1% 0;
+				// .basic-border;
+				.table-set;
+			}
+		
+
+
+
+
+
+}

@@ -208,11 +208,10 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+#media-nav {
+  display: none;
+}
 #follow {
-  border-width: 1px;
-  border-style: solid;
-  border-color: black;
-  border-collapse: collapse;
   position: sticky;
   top: 0;
   float: right;
@@ -270,10 +269,6 @@ li {
   color: #fa2500;
 }
 #sidebar {
-  border-width: 1px;
-  border-style: solid;
-  border-color: black;
-  border-collapse: collapse;
   position: fixed;
   width: 20%;
   height: 100%;
@@ -288,19 +283,11 @@ img {
   height: auto;
 }
 nav {
-  border-width: 1px;
-  border-style: solid;
-  border-color: black;
-  border-collapse: collapse;
   display: flex;
   text-align: right;
   height: 15rem;
 }
 nav ul {
-  border-width: 1px;
-  border-style: solid;
-  border-color: black;
-  border-collapse: collapse;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -310,10 +297,6 @@ nav ul {
   align-items: flex-end;
 }
 #wrapper {
-  border-width: 1px;
-  border-style: solid;
-  border-color: black;
-  border-collapse: collapse;
   width: 80%;
   height: auto;
   margin-left: 20%;
@@ -463,4 +446,160 @@ nav ul {
   line-height: 2rem;
   margin-top: 0.5%;
   padding: 0 2%;
+}
+@media (max-width: 768px) {
+  #follow {
+    display: none;
+  }
+  #media-nav {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: static;
+    width: 100%;
+    background-color: #c8c8d6;
+  }
+  .name-intro {
+    width: 100%;
+  }
+  .name {
+    font-size: 2.4rem;
+  }
+  address {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
+  }
+  .email a {
+    color: #148080;
+  }
+  .media-links {
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0 3%;
+  }
+  .media-links a {
+    color: #080808;
+  }
+  #sidebar {
+    display: none;
+  }
+  #wrapper {
+    width: 100%;
+    margin: 0;
+  }
+  #home {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+  }
+  .about {
+    width: 100%;
+  }
+  .about h3 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    text-align: center;
+    border-bottom: 2px solid black;
+  }
+  .about p {
+    line-height: normal;
+  }
+  .edu {
+    width: 100%;
+  }
+  .edu table {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-collapse: collapse;
+  }
+  .edu table {
+    width: 100%;
+  }
+  .edu caption {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-collapse: collapse;
+    font-weight: 700;
+    font-size: 2.4rem;
+    text-align: center;
+    padding: 1% 0;
+  }
+  .edu th,
+  .edu td {
+    padding: 1% 0;
+  }
+  .edu th {
+    text-align: center;
+    font-weight: 600;
+  }
+  .edu td {
+    text-align: center;
+  }
+  .edu td:first-child {
+    text-align: left;
+  }
+  .edu tr:nth-child(even) {
+    background-color: silver;
+  }
+  .exp {
+    width: 100%;
+  }
+  .exp table {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-collapse: collapse;
+  }
+  .exp table {
+    width: 100%;
+  }
+  .exp caption {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-collapse: collapse;
+    font-weight: 700;
+    font-size: 2.4rem;
+    text-align: center;
+    padding: 1% 0;
+  }
+  .exp th,
+  .exp td {
+    padding: 1% 0;
+  }
+  .exp th {
+    text-align: center;
+    font-weight: 600;
+  }
+  .exp td {
+    text-align: center;
+  }
+  .exp td:first-child {
+    text-align: left;
+  }
+  .exp tr:nth-child(even) {
+    background-color: silver;
+  }
 }
