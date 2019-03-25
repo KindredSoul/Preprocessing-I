@@ -30,6 +30,9 @@
     </header>
     <section class="info-bar media-dropdown">
         <div class="name">
+            <div class="profile-pic">
+                <img src="img/profile-pic.jpg"  alt="profile picture, immaculate">
+            </div>
             <h1>Jabril Breckenridge</h1>
         </div>
         <div class="info">
@@ -47,7 +50,7 @@
     </section>
     <main class="main-content">
         <section id="home" class="landing-content">
-            <article>
+            <section>
                 <h3>Why Me</h3>
                 <p>
                     Who are you talking to right now? Who is it you think you see? Do you know how much I make a year? I mean, even if I told you, you wouldn't believe it. Do you know what would happen if I suddenly decided to stop going into work?
@@ -55,81 +58,73 @@
                 <p>
                     A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in. I am not in danger, Skyler. I AM the danger! A guy opens his door and gets shot and you think that of me? No. I am the one who knocks! 
                 </p>
-            </article>
-            <table>
-                    <caption><span>Education</span></caption>
-                    <thead>
-                        <tr>
+            </section>
+            <table class="history">
+                    <caption>Education</caption>
+                        <tr class="thead">
                             <th>School</th>
                             <th>Years Attended</th>
                             <th>Subject of Study</th>
                             <th>Diploma/Certificate</th>
                         </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
+                        <tr class="tbody">
                             <td>University</td>
                             <td>1994-2019</td>
                             <td>Something Useless</td>
                             <td>PhD in Nothing Useful</td>
                         </tr>
-                        <tr>
+                        <tr class="tbody">
                             <td>College of Winterhold</td>
                             <td>2013-2019</td>
                             <td>Some Sorcery</td>
                             <td>Masters in the Arcane Arts</td>
                         </tr>
-                        <tr>
+                        <tr class="tbody">
                             <td>Monster Hunter Academy</td>
                             <td>2009-Present</td>
                             <td>Tracking/Hunting/Capturing of Large Monsters</td>
                             <td>Masters in BFWeaponss, BFGuns, and BFMonsters</td>
                         </tr>
-                        <tr>
+                        <tr class="tbody">
                             <td>Lambda School</td>
                             <td>2019-Present</td>
                             <td>Full Stack Web Development</td>
                             <td>In Progress</td>
                         </tr>
-                    </tbody>
                 </table>
 
-                <table>
-                    <caption><span>Work Experience</span></caption>
-                    <thead>
-                        <tr>
+                <table class="history">
+                    <caption>Work Experience</caption>
+                        <tr class="thead">
                             <th>Company</th>
                             <th>Years</th>
                             <th>Position(s)</th>
                             <th>Skills Used/Acquired</th>
                         </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
+                        <tr class="tbody">
                             <td>NoGood Inc.</td>
                             <td>2000-2019</td>
                             <td>Background Worker, Mouth Breather</td>
                             <td>Blending In</td>
                         </tr>
-                        <tr>
+                        <tr class="tbody">
                             <td>Tamriel</td>
                             <td>2013-2019</td>
                             <td>Dovahkiin, ArchMagus, Jarl</td>
                             <td>An assortment of Magicks and Shouts</td>
                         </tr>
-                        <tr>
+                        <tr class="tbody">
                             <td>Self-Employed</td>
                             <td>2009-Present</td>
                             <td>Hunter, Healer, Trapmaster</td>
                             <td>Used an assortment of "tools" to dispatch and/or capture creatures of intrigue</td>
                         </tr>
-                        <tr>
+                        <tr class="tbody">
                             <td>Big Store</td>
                             <td>2019-Present</td>
                             <td>Associate</td>
                             <td>Use arcane prowess to "do away" with customers</td>
                         </tr>
-                    </tbody>
                 </table>
         </section>
 
@@ -154,28 +149,27 @@
             </p>
         </section>
 
-        <section id="four" class="section-content">
+        <section id="four" class="section-content form-content">
             <h2>Contact Me</h2>
             <p>Like what you see? Want to meet or talk? Feel free to contact me here or on any of the social media sites presented here. </p>
             <form action="#" >
-                First name: <input type="text" name="FirstName"><br />
-                Last name:  <input type="text" name="LastName"><br />
-                Email: <input type="email" name="email"><br />
+                First name: <input class="info" type="text" name="FirstName"><br />
+                Last name:  <input class="info" type="text" name="LastName"><br />
+                Email: <input class="info" type="email" name="email"><br />
                 <textarea rows="5" cols="50" maxlength="1000" wrap="hard" placeholder="Please also include your company/business name and how you found out about me. Thank you."></textarea><br />
                 <input type="submit" value="Submit">
             </form>
         </section>
     </main>
-    <footer>
-        <div>
-            <nav class="media-links footer-links">
-                <a href="#" class="fab fa-facebook"><span class="laptop-only">Facebook</span></a>
-                <a href="#" class="fab fa-twitter"><span class="laptop-only">Twitter</span></a>
-                <a href="#" class="fab fa-github"><span class="laptop-only">GitHub</span></a>
-                <a href="#" class="fab fa-linkedin"><span class="laptop-only">LinkedIn</span></a>
-            </nav>
-            <p>Copyright 2019 | Created by: Jabril Breckenridge</p>
-        </div>
+
+    <footer class="end-content">
+        <nav class="media-links footer-links">
+            <a href="#" class="fab fa-facebook"><span class="laptop-only">Facebook</span></a>
+            <a href="#" class="fab fa-twitter"><span class="laptop-only">Twitter</span></a>
+            <a href="#" class="fab fa-github"><span class="laptop-only">GitHub</span></a>
+            <a href="#" class="fab fa-linkedin"><span class="laptop-only">LinkedIn</span></a>
+        </nav>
+        <p>Copyright 2019 | Created by: Jabril Breckenridge</p>
     </footer>
 </body>
 </html>
