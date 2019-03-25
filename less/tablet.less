@@ -1,25 +1,149 @@
 // Active after viewport exceeds 500px
 @media @tablet {
-    html, body {
-        max-width: 1024px;
-    }
 // Media-navbar
     .media-navbar {
         // .test-border;
-        .flex(column; align-content; center))
+        .flex(column; align-content; center);
+        justify-content: center;
+        border-right: 2px solid black;
         position: fixed;
         float: left;
-        width: 15%;
-        height:auto;
+        width: 20%;
+        height: 100%;
+        color: lighten(silver, 15%);
+        background-color: darken(silver, 45%);
+
         .profile-pic {
-            display: initial;
+            display: block;
+            position: absolute;
+            top: 0;
         }
+
         .highlights {
-            .test-border;
+            border: none;
             .flex(column; align-items; center);
-            padding: 0.5% 2%;
-            font-size: 1.6rem;
+            margin: 20% 0;
+            padding: 10% 2%;
+            font-size: 2.0rem;
+            text-align: center;
+            height: 100%;
+
+            a {
+                // .test-border;
+                border-radius: 10px;
+                padding: 10% 0;
+                width: 100%;
+                &:hover {
+                    color: darken(silver, 45%);
+                    background-color: lighten(silver, 15%);
+                }
+            }
         }
     }
 
+    .info-bar {
+        // .test-border;
+        border: none;
+        border-bottom: @tborder;
+        .flex(column; align-content; center);
+        .sidebar-adjust;
+        .name {
+            width: 100%;
+            .flex;
+            background-color: darken(silver, 45%);
+
+            .profile-pic {
+                display: none;
+            }
+
+            h1 {
+                width: 100%;
+                padding: 1% 0;
+            }
+        }
+// Info-header
+        .info {
+            width: 100%;
+            padding: 0.5% 1%;
+            address {
+                // .test-border;
+                // border-right: 1px solid black;
+            }
+            .phone {
+                // .test-border;
+                // border-right: 1px solid black;
+            }
+            .email {
+                // .test-border;
+            }
+        }
+        .media-links {
+            border: none;
+            border-top: 1px solid black; 
+            width: 100%;
+            padding: 0.5% 5%;
+            color: blue;
+        }
+    
+    }
+// Main-content
+    .main-content {
+        .sidebar-adjust;
+        .section-content {
+            padding: 2% 0 3%;
+            border-top: 2px solid blue;
+        }
+    // Home/Overview
+        .landing-content {
+            margin-bottom: 5%;
+            h3 {
+                border-bottom: 2px solid black;
+            }
+            .history {
+
+                caption{
+                 
+                }
+                .thead {
+                  
+                }
+                .tbody {
+                   
+                }
+            }
+        }
+    
+    // One: Education
+    
+    
+    
+    // Two: Experience
+    
+    
+    
+    // Three: About Me
+    
+    
+    
+    // Four: Contact Me
+        .form-content {
+            form {
+                margin-top: 3%;
+                width: 100%;
+                .flex(column; align-content; center);
+                font-size: 1.6rem;
+                .info {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    .end-content {
+        .sidebar-adjust;
+        padding: 2% 0;
+        .footer-links {
+            color: blue;
+        }
+    }
 }

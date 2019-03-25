@@ -1,6 +1,10 @@
 .test-border {
   border: 1px solid black;
 }
+.sidebar-adjust {
+  width: 80%;
+  margin-left: 20%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -140,10 +144,8 @@ body {
 html {
   font-size: 62.5%;
 }
-html,
 body {
-  max-width: 550px;
-  width: 100%;
+  min-width: 549px;
 }
 a {
   text-decoration: none;
@@ -168,6 +170,9 @@ h1,
 h2,
 h3 {
   text-align: center;
+}
+img {
+  width: 100%;
 }
 .media-navbar .profile-pic {
   display: none;
@@ -217,9 +222,6 @@ h3 {
 }
 .info-bar .name .profile-pic {
   max-width: 20%;
-}
-.info-bar .name .profile-pic img {
-  width: 100%;
 }
 .info-bar .name h1 {
   width: 80%;
@@ -297,6 +299,7 @@ h3 {
 }
 .main-content .form-content form {
   margin-top: 3%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -305,4 +308,194 @@ h3 {
 }
 .main-content .form-content form .info {
   width: 50%;
+}
+@media (min-width: 550px) {
+  .media-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    border-right: 2px solid black;
+    position: fixed;
+    float: left;
+    width: 20%;
+    height: 100%;
+    color: #e6e6e6;
+    background-color: #4d4d4d;
+  }
+  .media-navbar .profile-pic {
+    display: block;
+    position: absolute;
+    top: 0;
+  }
+  .media-navbar .highlights {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20% 0;
+    padding: 10% 2%;
+    font-size: 2rem;
+    text-align: center;
+    height: 100%;
+  }
+  .media-navbar .highlights a {
+    border-radius: 10px;
+    padding: 10% 0;
+    width: 100%;
+  }
+  .media-navbar .highlights a:hover {
+    color: #4d4d4d;
+    background-color: #e6e6e6;
+  }
+  .info-bar {
+    border: none;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 20%;
+  }
+  .info-bar .name {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #4d4d4d;
+  }
+  .info-bar .name .profile-pic {
+    display: none;
+  }
+  .info-bar .name h1 {
+    width: 100%;
+    padding: 1% 0;
+  }
+  .info-bar .info {
+    width: 100%;
+    padding: 0.5% 1%;
+  }
+  .info-bar .media-links {
+    border: none;
+    border-top: 1px solid black;
+    width: 100%;
+    padding: 0.5% 5%;
+    color: blue;
+  }
+  .main-content {
+    width: 80%;
+    margin-left: 20%;
+  }
+  .main-content .section-content {
+    padding: 2% 0 3%;
+    border-top: 2px solid blue;
+  }
+  .main-content .landing-content {
+    margin-bottom: 5%;
+  }
+  .main-content .landing-content h3 {
+    border-bottom: 2px solid black;
+  }
+  .main-content .form-content form {
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.6rem;
+  }
+  .main-content .form-content form .info {
+    width: 50%;
+  }
+  .end-content {
+    width: 80%;
+    margin-left: 20%;
+    padding: 2% 0;
+  }
+  .end-content .footer-links {
+    color: blue;
+  }
+}
+@media (min-width: 1024px) {
+  .media-navbar {
+    border-right: 2px solid #3effff;
+  }
+  .media-navbar .highlights {
+    margin: 70% 0 10%;
+  }
+  .info-bar {
+    border: none;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 20%;
+  }
+  .info-bar .name {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #4d4d4d;
+  }
+  .info-bar .name .profile-pic {
+    display: none;
+  }
+  .info-bar .name h1 {
+    width: 100%;
+    padding: 1% 0;
+  }
+  .info-bar .info {
+    width: 100%;
+    padding: 0.5% 1%;
+  }
+  .info-bar .media-links {
+    border: none;
+    border-top: 1px solid black;
+    width: 100%;
+    padding: 0.5% 5%;
+    color: blue;
+  }
+  .main-content {
+    width: 80%;
+    margin-left: 20%;
+  }
+  .main-content .section-content {
+    padding: 2% 0 3%;
+    border-top: 2px solid blue;
+  }
+  .main-content .landing-content {
+    margin-bottom: 5%;
+  }
+  .main-content .landing-content h3 {
+    border-bottom: 2px solid black;
+  }
+  .main-content .form-content form {
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.6rem;
+  }
+  .main-content .form-content form .info {
+    width: 50%;
+  }
+  .end-content {
+    width: 80%;
+    margin-left: 20%;
+    padding: 2% 0;
+  }
+  .end-content .footer-links {
+    color: blue;
+  }
 }

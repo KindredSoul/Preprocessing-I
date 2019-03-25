@@ -1,7 +1,126 @@
 // Active once viewport exceeds 1024px
 @media @laptop {
-    html, body{
-        max-width: 1500px;
+    // Media-navbar
+    .media-navbar {
+        // .test-border;
+        border-right: 2px solid darken(azure, 35%);
+        .profile-pic {
+         
+        }
+    
+        .highlights {
+            margin: 70% 0 10%;
+    
+            a {
+
+                
+            }
+        }
     }
     
+    .info-bar {
+        // .test-border;
+        border: none;
+        border-bottom: @tborder;
+        .flex(column; align-content; center);
+        .sidebar-adjust;
+        .name {
+            width: 100%;
+            .flex;
+            background-color: darken(silver, 45%);
+    
+            .profile-pic {
+                display: none;
+            }
+    
+            h1 {
+                width: 100%;
+                padding: 1% 0;
+            }
+        }
+    // Info-header
+        .info {
+            width: 100%;
+            padding: 0.5% 1%;
+            address {
+                // .test-border;
+                // border-right: 1px solid black;
+            }
+            .phone {
+                // .test-border;
+                // border-right: 1px solid black;
+            }
+            .email {
+                // .test-border;
+            }
+        }
+        .media-links {
+            border: none;
+            border-top: 1px solid black; 
+            width: 100%;
+            padding: 0.5% 5%;
+            color: blue;
+        }
+        
+    }
+    // Main-content
+    .main-content {
+        .sidebar-adjust;
+        .section-content {
+            padding: 2% 0 3%;
+            border-top: 2px solid blue;
+        }
+    // Home/Overview
+        .landing-content {
+            margin-bottom: 5%;
+            h3 {
+                border-bottom: 2px solid black;
+            }
+            .history {
+
+                caption{
+                 
+                }
+                .thead {
+                  
+                }
+                .tbody {
+                   
+                }
+            }
+        }
+    
+// One: Education
+    
+        
+        
+    // Two: Experience
+        
+        
+        
+    // Three: About Me
+        
+        
+        
+    // Four: Contact Me
+        .form-content {
+            form {
+                margin-top: 3%;
+                width: 100%;
+                .flex(column; align-content; center);
+                font-size: 1.6rem;
+                .info {
+                        width: 50%;
+                }
+            }
+        }
+    }
+    
+    .end-content {
+        .sidebar-adjust;
+        padding: 2% 0;
+        .footer-links {
+                color: blue;
+        }
+    }
 }
