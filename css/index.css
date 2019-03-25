@@ -1,3 +1,6 @@
+.test-border {
+  border: 1px solid black;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -139,12 +142,13 @@ html {
 }
 html,
 body {
-  max-width: 500px;
+  max-width: 550px;
   width: 100%;
 }
 a {
   text-decoration: none;
   color: inherit;
+  font-size: 1.6rem;
 }
 h1 {
   font-size: 4rem;
@@ -168,4 +172,60 @@ h2,
 h3,
 p {
   padding: 2% 0;
+}
+.media-navbar .profile-pic {
+  display: none;
+}
+.media-navbar .highlights {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1% 2%;
+  font-size: 1.6rem;
+}
+.info-bar {
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.info-bar .name {
+  width: 100%;
+  font-weight: 900;
+}
+.info-bar .info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  padding: 0 1%;
+  font-size: 1.2rem;
+}
+.info-bar .info address {
+  border: 1px solid black;
+  margin: 0;
+  border-right: 1px solid black;
+}
+.info-bar .info .phone {
+  border: 1px solid black;
+  margin: 0;
+}
+.info-bar .info .email {
+  border: 1px solid black;
+  margin: 0;
+}
+.info-bar .media-links {
+  display: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  border-left: 1px solid black;
+  width: 20%;
+  padding: 0 1%;
+  color: maroon;
 }
