@@ -1,0 +1,18 @@
+// Global Mixins
+.test-border {
+    border: @tborder;
+    // border-collapse: collapse;
+}
+
+.flex (@flex-dir: row; @align: align-content; @align-how: center) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: @flex-dir;
+    justify-content: space-between;
+    @align: @align-how;
+}
+
+.sidebar-adjust {
+    width: 80%;
+    margin-left: 20%;
+}
